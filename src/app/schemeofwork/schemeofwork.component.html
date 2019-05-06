@@ -1,0 +1,57 @@
+<!-- <app-usernavbar></app-usernavbar> -->
+
+<!-- <mat-spinner></mat-spinner> -->
+
+
+<div *ngIf="loader"> <mat-progress-bar mode="indeterminate"></mat-progress-bar></div>  
+
+        <div class="col-md-9" style="float:right;margin-top:20px;">
+
+                <mat-card class="dashboard-card" >
+                        <mat-card-header>
+                          <mat-card-title>
+                                <h4> <b>Scheme Of Work</b> </h4> 
+                          </mat-card-title>
+                          
+                        </mat-card-header>
+                        <mat-card-content class="dashboard-card-content">
+                          <div>
+                                <table class="table table-striped " style="width:100%;">
+                                        <thead class="thead-inverse">
+                                            <tr>
+                                                <th>Class</th>        
+                                            </tr>
+                                            </thead>
+                                            <div *ngIf="loader"> <mat-progress-bar mode="indeterminate"></mat-progress-bar></div>  
+                                            <tbody *ngIf="!loader">
+                                                   
+                                                            <tr  *ngFor = "let classes of ClassNames" >
+                                                                    <td (click)="LoadSubjects(classes.class_name)" style="cursor:pointer;">{{ classes.class_name }}</td>
+                                                                    
+                                                                </tr>  
+                                                          
+                                                          
+                                                       
+                                                          
+                                        
+                                                
+                                                
+                                            </tbody>
+                                    </table>
+                         
+                          </div>
+                        </mat-card-content>
+                      </mat-card>
+
+            
+</div>
+
+
+            
+  
+  
+
+
+
+
+

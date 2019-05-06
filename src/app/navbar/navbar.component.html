@@ -1,0 +1,59 @@
+
+<nav class="navbar navbar-expand-md navbar-dark  bg-dark header-bg">
+  <a class="navbar-brand logo-bg" style="color:black;font-weight:bolder;" routerLink=""> <img src="../assets/images/logo.png" alt="" srcset=""> Castro Institute </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+  <div id="nav-icon1">
+<span></span>
+<span></span>
+<span></span>
+</div>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav ml-auto ml-content ">
+    
+      <li class="nav-item">
+        <a class="nav-link bold-cont click-me" routerLink=""> <i class="fa fa-home" aria-hidden="true"></i>Home</a>
+      </li>
+
+
+      <li class="nav-item">
+        <a class="nav-link bold-cont click-me" style="cursor:pointer;" (click)="ChangeLocation('about')"> <i class="fa fa-users" aria-hidden="true"></i>  About Us</a>
+      </li>
+       
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle  bold-cont click-me" routerLink="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Events <i class="fa fa-calendar-o" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" style="cursor:pointer;" (click)="ChangeLocation('gallery')">Gallery</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" style="cursor:pointer;" (click)="ChangeLocation('calendar')">Calendar</a>
+        </div>
+      </li>
+       
+     
+      <li class="nav-item">
+        <a class="nav-link bold-cont click-me"style="cursor:pointer;" (click)="ChangeLocation('blog')">  <i class="fa fa-newspaper-o" aria-hidden="true"></i> Blog </a>
+      </li>
+       
+      <li class="nav-item">
+        <a class="nav-link bold-cont click-me" style="cursor:pointer;" (click)="LoginStudentOrParentView()"> <i class="fa fa-user-circle-o" aria-hidden="true"></i> Login </a>
+      </li>
+    </ul>
+
+    <li class="nav-item right style-special">
+      <a class="nav-link bold-cont click-me"><i class="fa fa-phone" aria-hidden="true"></i> 07010342545</a>
+    </li>
+    
+           </div>
+
+
+          
+          
+
+</nav>
+
+
+
+
+

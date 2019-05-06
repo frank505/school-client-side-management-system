@@ -1,1 +1,98 @@
 /* You can add global styles to this file, and also import other style files */
+.swal-button{background: orange !important;}
+.side-bar-content {
+position: fixed;
+width: 250px;
+overflow-y: auto;
+z-index: 10;
+ top: 0;
+bottom: 0;
+border-color: #1e1d1d;
+margin-top:50px;
+border-right: 1px solid #e5e5e5;
+}
+.black-bg {
+    background: #ffd777;
+    border-bottom: 1px solid #c9aa5f;
+}
+.extra-height{height:60px;}
+.first-area-side {
+    bottom: 0;
+    top: 0;
+    padding-top: 10px;
+    padding-bottom: 3px;
+}
+.content-area-side-bar {
+    width: 100%;
+}
+.ul-area {
+    padding: 3%;
+}
+.ul-area > li > a {
+    text-decoration: none;
+    color:#ccc;
+    display: block;
+    padding-top: 15px;
+padding-bottom: 15px;
+font-size: 14px;margin-top:4px;margin-bottom:4px;
+}
+
+.ul-area li a.active, .ul-area li a:hover, .ul-area li a:focus {
+    background: #68dff0;
+    color: #fff;
+    display: block;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.img-style {
+    margin-top: 65px;
+    width: 42%;
+    height: 100px;
+    border-radius: 100%;
+    text-align: center;
+    margin-left: 27%;
+    margin-bottom: 20px;border:1px solid #ffd777;
+}
+.ul-area > li {
+    list-style: none;
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+}
+.side-me {
+    cursor: pointer;
+    color: white;
+}
+.ul-drop-down {
+    padding: 3%;
+    display: none;
+}
+.top-campaign {
+    padding-bottom: 97px;
+    margin-bottom: 40px;
+}
+
+.sidenav-container {
+    height: 64px !important;
+    
+}
+.mat-drawer-transition .mat-drawer-backdrop {
+    transition-duration: .4s;
+    transition-timing-function: cubic-bezier(.25,.8,.25,1);
+    transition-property: background-color,visibility;
+    top: 0 !important;
+    bottom: 0 !important;;
+    position: fixed;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Roboto', sans-serif; }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Roboto', sans-serif; }
+@media (min-width: 768px){
+
+}

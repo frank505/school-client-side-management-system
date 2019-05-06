@@ -1,0 +1,12 @@
+.section_title h1 {display: block; color: #1a1a1a;font-weight: 500;padding-top: 24px;}
+.event_item {margin-bottom: 56px;}
+.event_date {width: 131px; height: 131px;border: solid 2px #ffb606;margin-bottom: 18px;}
+.event_day {font-size: 48px; font-weight: 700;color: #ffb606;margin-bottom: 1px; line-height: 1;}
+.event_image img { width: 100%;}
+.event_month {font-size: 16px;font-weight: 700;color: #ffb606;}
+
+@media only screen and (max-width: 575px){
+.event_month {
+    font-size: 14px;
+}
+}

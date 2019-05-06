@@ -1,0 +1,64 @@
+<app-navbar></app-navbar>
+<div class="container">
+<div class="row">
+
+<div class="col-md-12" style="margin-top:60px;margin-bottom:50px;">
+
+
+  <div class="login-wrap" style="background: url(assets/images/bg101.jpg) no-repeat center;">
+    <div class="login-html">
+      <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+      <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+      <div class="login-form">
+        <div class="sign-in-htm">
+          
+          <div class="group">
+            <label for="user" class="label">Unique Id</label>
+            <input id="user" type="text"   [(ngModel)]="user_key"   class="input">
+          </div>
+          <div class="group">
+            <label for="pass" class="label">Password</label>
+            <input id="pass" type="password" class="input"  [(ngModel)]="user_password"  data-type="password">
+          </div>
+          <div class="group">
+            <input id="check" type="checkbox"  (change)="toggleChange($event)" class="check">
+            <label for="check"><span class="icon"></span> Keep me Signed in</label>
+          </div>
+          <div class="group">
+            <input type="button"  (click)="UserLogin()" class="button" value="Sign In">
+          </div>
+          <div class="hr"></div>
+          <div class="foot-lnk">
+            <a href="#forgot">Forgot Password?</a>
+          </div>
+        </div>
+  
+  
+  
+        <div class="sign-up-htm">
+         
+        <h3><b><p>Students Can Only Sign Up with the Unique Id Given To Them By The School.</p></b></h3>       
+          <div class="hr"></div>
+        </div>
+  
+  
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+
+
+
+
+
+</div>
+
+</div>
+
+</div>
+
+<app-footer></app-footer>

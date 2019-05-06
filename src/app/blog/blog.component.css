@@ -1,0 +1,19 @@
+.custom-text-decoration {
+    color: rgb(37,37,37) !important;
+}
+.row-line {
+    border-bottom: 1px solid #CCC;
+}
+.reduce-size-content {
+    font-size: 14px;
+    color: #868484;
+    margin-bottom: 30px;
+}
+.content-header {
+    font-weight: bolder;
+    color:#ffb606;
+    font-size: 20px;
+}
+.custom-text-decoration:hover{
+ text-decoration: none;
+}

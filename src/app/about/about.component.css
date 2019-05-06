@@ -1,0 +1,9 @@
+.content-section-about-header{
+    position: absolute;
+margin-top: 250px;
+margin-left: 40%;
+color: orange;
+font-weight: bolder
+}
+.content-section-about-header > h1{font-size:60px;}
+.vid-content{margin-top:40px;margin-bottom: 40px;}

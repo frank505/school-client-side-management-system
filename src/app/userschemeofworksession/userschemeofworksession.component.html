@@ -1,0 +1,49 @@
+<!-- <app-usernavbar></app-usernavbar> -->
+
+  
+
+<div *ngIf="loader"> <mat-progress-bar mode="indeterminate"></mat-progress-bar></div>  
+
+<div class="col-md-9" style="float:right;margin-top:20px;">
+        <mat-card class="dashboard-card" >
+                <mat-card-header>
+                  <mat-card-title>
+                        <h4> <b>Scheme Of Work</b> </h4> 
+                  </mat-card-title>
+                  
+                </mat-card-header>
+                <mat-card-content class="dashboard-card-content">
+                  <div>
+                        <table class="table table-striped " style="width:100%;">
+                                <thead class="thead-inverse">
+                                    <tr>
+                                        <th>Session</th>        
+                                    </tr>
+                                    </thead>
+                                    <div *ngIf="loader"> <mat-progress-bar mode="indeterminate"></mat-progress-bar></div>  
+                                    <tbody *ngIf="!loader">
+                                   
+                                        <tr *ngFor = "let sessions of SessionsName" >
+                                            <td (click)="LoadTopics(sessions.sessions_name)"  style="cursor:pointer;">{{ sessions.sessions_name }}</td>
+                                            
+                                        </tr>
+                                        
+                                    </tbody>
+                            </table>
+                 
+                  </div>
+                </mat-card-content>
+              </mat-card>
+
+    
+</div>
+
+
+      
+
+
+
+
+
+
+

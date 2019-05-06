@@ -1,0 +1,39 @@
+
+
+<div *ngIf="loader"> <mat-progress-bar mode="indeterminate"></mat-progress-bar></div>  
+
+<div class="col-md-9" style="float:right;margin-top:20px;text-align: center;">
+
+<mat-card class="dashboard-card" *ngFor = "let details of StudentDetails">
+        <mat-card-header>
+          <mat-card-title>
+          <h4><b>Profile</b></h4> 
+          </mat-card-title>
+          
+        </mat-card-header>
+        <hr>
+        <mat-card-content class="dashboard-card-content">
+            <div *ngIf="loader"> <mat-progress-bar mode="indeterminate"></mat-progress-bar></div>  
+          <div *ngIf="!loader" >
+                <b>Name:</b>
+                <div>{{ details.username }}</div><br>
+                <b>Class:</b>
+                <div>{{ details.class_name }}</div><br>
+                <b>Sex:</b>
+                <div>{{ details.sex }}</div><br>
+                <b>date of birth:</b>
+                <div>{{ details.date_of_birth }}</div><br>
+                <b>Image:</b><br><br>
+                <img style="width:100px;height:100px;"src="{{ user_url }}/{{ details.file_name }}"/><br>
+          
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+          
+   
+
+
+
+
+

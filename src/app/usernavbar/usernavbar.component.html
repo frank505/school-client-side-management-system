@@ -1,0 +1,107 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav style="border-right: 1px solid #ccc !important;"
+    #drawer
+    class="sidenav"
+    fixedInViewport="true"
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="!(isHandset$ | async)">
+    <mat-toolbar color="primary"><a class="navbar-brand logo-bg-bs" style="color:white;font-weight:bold;font-size:14px;" routerLink=""> <img src="../assets/images/logo.png" alt="" srcset=""> Castro Institute </a></mat-toolbar>
+    <mat-nav-list>
+    <!-- <div class="form-group">
+      <input type="text"
+        class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+      <small id="helpId" class="form-text text-muted">Help text</small>
+    </div>
+        <mat-form-field style="width:80%;margin-left:10%;margin-right:10%;">
+            <input   [(ngModel)]="search_sections" matInput placeholder="search" [type]="search">
+            <mat-icon> <i class="fa fa-search" aria-hidden="true"></i> </mat-icon>
+          </mat-form-field> -->
+      <a mat-list-item routerLink="/student-dashboard">  <i class="fa fa-home" aria-hidden="true"></i>&nbsp;Dashboard   </a>
+      <a mat-list-item  routerLink="/student-dashboard/scheme-of-work"> <i class="fa fa-newspaper-o" aria-hidden="true"></i>&nbsp;  Scheme </a>
+      <a mat-list-item routerLink="/student-dashboard/profile"> <i class="fa fa-user-circle-o" aria-hidden="true"></i>&nbsp; profile </a>
+
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+      
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span><!--more content can be added here just incase-->
+        <a class="navbar-brand logo-bg-sc" style="color:white;font-weight:bolder;font-size:14px;" routerLink=""> <img src="../assets/images/logo.png" alt="" srcset=""> Castro Institute </a>
+
+
+      </span>
+      
+  
+
+      <ul class="navbar-nav ml-auto ul-content">
+      
+        <form class="form-header" action="" method="POST">
+          <input class="au-input au-input--xl" type="text" name="search" placeholder="Search for datas &amp; reports...">
+          <button class="au-btn--submit" type="button">
+              <i class="fa fa-search" aria-hidden="true"></i>
+          </button>
+      </form>
+        
+        <!-- <input type="text" matInput name="" id="">
+         <button mat-button > <i class="fa fa-search" aria-hidden="true"></i> </button> -->
+
+      </ul>
+      
+
+      <ul class="navbar-nav ml-auto ul-content">
+        <li>
+
+          <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu1" aria-label="Toggle menu">
+            <i class="fa fa-bell fa-1x" aria-hidden="true"></i>&nbsp;&nbsp;
+           </button>
+           <mat-menu #menu1="matMenu" xPosition="before">
+             <button mat-menu-item>Expand</button>
+             <button mat-menu-item>Remove</button>
+           </mat-menu>
+       
+
+        </li>
+         
+        <li>
+
+          <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu2" aria-label="Toggle menu">
+          <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>  &nbsp;
+           </button>
+           <mat-menu #menu2="matMenu" xPosition="before">
+             <button mat-menu-item>Expand</button>
+             <button mat-menu-item>Remove</button>
+           </mat-menu>
+       
+        </li>
+             
+    <li>
+      <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+        <i class="fa fa-users fa-1x" aria-hidden="true">&nbsp;</i><i class="fa fa-caret-down" aria-hidden="true"></i>
+       </button>
+       <mat-menu #menu="matMenu" xPosition="before">
+         <button mat-menu-item routerLink="/student-dashboard/profile"><i class="fa fa-users" aria-hidden="true"></i> profile</button>
+         <button mat-menu-item routerLink="/student-dashboard/reset-password"><b> <i class="fa fa-key"></i>password</b></button>
+        <button mat-menu-item  (click)="LogOut()"> <b> <i class="fa fa-sign-out" aria-hidden="true"></i> logout</b> </button>
+       </mat-menu>
+    </li>
+        
+       
+        
+
+        </ul>
+
+    </mat-toolbar>
+    <!-- Add Content Here -->
+   
+    
+  </mat-sidenav-content>
+</mat-sidenav-container>

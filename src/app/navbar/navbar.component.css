@@ -1,0 +1,9 @@
+.header-bg{background: white !important;color:black !important;width: 80%;position: fixed;
+margin-top: 30px;margin-left: 10%;z-index: 10;box-shadow: 0px 0px 20px 1px rgba(15, 15, 15, 0.62);}
+.click-me{margin-left:20px;color:black !important;font-weight:bolder;}
+.click-me:hover {
+    color:#ffb606 !important;
+}
+.ml-content{margin-right:10%;}
+.style-special{list-style: none;text-decoration: none;background:#ffb606;color:white;font-weight:bolder;}
+.style-special > a:hover{color:white !important;}
